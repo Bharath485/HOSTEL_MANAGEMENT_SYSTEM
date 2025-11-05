@@ -1,0 +1,26 @@
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.env
+.venv/
+venv/
+
+# macOS
+.DS_Store
+
+# Data and logs
+data/*.csv
+!data/README.md
+
+# Streamlit
+.streamlit/
+
+# VSCode
+.vscode/
+
+# PyCache
+**/__pycache__/
