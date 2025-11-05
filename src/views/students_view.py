@@ -4,7 +4,7 @@ from ..services.student_service import students_store
 
 def show_students():
     st.subheader("Students")
-    with st.expander("➕ Add Student", expanded=True):
+    with st.expander("➕ Add Student", expanded=False):
         with st.form("add_student_form", clear_on_submit=True):
             name = st.text_input("Name")
             email = st.text_input("Email")
