@@ -1,15 +1,60 @@
 
-# Hostel Management System (Streamlit + CSV)
+# 🏨 Hostel Management System (Streamlit + Python)
 
-A lightweight, file-based Hostel Management System built with **Python** and **Streamlit**.
-Data is stored in simple **CSV** files under the `data/` directory.
+A full-featured **Hostel Management System** built using **Python**, **Streamlit**, and **CSV-based persistent storage**.  
+This system is designed for hostel owners to manage **rooms, students, bookings, payments, and occupancy** with ease.  
+Each user who signs up gets a **separate, private hostel account** — meaning **no data is shared between users**.
 
-## Features
-- Dashboard with quick metrics
-- Students management (add/list)
-- Rooms management (add/list)
-- Bookings and Fees stubs (ready to extend)
-- File-based services with CSV CRUD helpers
+---
+
+## 🚀 Live Demo
+| App | Status |
+|-----|--------|
+| **Live Streamlit App** | https://hostel-management-system.streamlit.app/ |
+
+Click to open → Sign up → Generate rooms → Start managing ✅
+
+---
+
+## ✨ Key Features
+### 🧑‍🎓 Student Management
+- Add students with contact details
+- View and manage student records (per user only)
+
+### 🏠 Room Management
+- Auto-generate **100 rooms**:
+  - Rooms `01–50` → **3-Sharing** (₹40,000 / 6 months)
+  - Rooms `51–100` → **2-Sharing** (₹50,000 / 6 months)
+- Automatic **capacity & occupancy tracking**
+- Visual room map (color-coded availability)
+
+### 🛏️ Booking System
+- Book a room for any student
+- Prevents **overbooking** (real-time availability check)
+- Updates occupancy automatically
+
+### 💰 Fees & Payment Tracking
+- Pay-and-Book workflow integrated
+- Stores payment date, amount, and status
+
+### 🔐 Secure Multi-User Data Isolation
+- Every signup becomes **Admin** of their hostel
+- Users **do not see or share each other's data**
+
+---
+
+## 🖼️ Dashboard Overview
+The dashboard displays:
+
+| Metric | Description |
+|--------|-------------|
+| Total Students | Count in your hostel |
+| Total Rooms | Assigned to your account |
+| Active Bookings | Students currently staying |
+| Vacant Beds | Available capacity |
+
+Plus segment-wise vacancy (2-share vs 3-share).
+
 
 ## Run Locally
 ```bash
